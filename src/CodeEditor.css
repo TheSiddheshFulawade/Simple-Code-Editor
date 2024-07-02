@@ -1,0 +1,71 @@
+.code-editor-container {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #282c34; 
+}
+
+.line-numbers {
+  background: #282c34; 
+  color: #f8f8f2;
+  padding: 10px 0 10px 10px; 
+  user-select: none;
+  text-align: right;
+}
+
+.line-number {
+  height: 1.5em; 
+  line-height: 1.5em;
+  padding-right: 10px;
+}
+
+.line-number.active {
+  background: #44475a; 
+}
+
+.code-editor {
+  position: relative;
+  width: 100%;
+}
+
+.code-input {
+  width: 100%;
+  height: 300px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1.5em;
+  resize: none;
+  background-color: transparent; 
+  color: #f8f8f2; 
+  z-index: 1; 
+  position: relative;
+  caret-color: #f8f8f2; 
+  white-space: pre-wrap;
+  overflow: hidden; 
+}
+
+.code-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  z-index: 0; 
+  margin: 0;
+  padding: 10px;
+  background: #282c34; 
+  color: #f8f8f2; 
+  overflow: hidden;
+  line-height: 1.5em;
+  white-space: pre-wrap; 
+}
+
+.active-line {
+  background: #44475a; 
+}
